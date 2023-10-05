@@ -26,17 +26,17 @@ export const Section = styled.section`
   border-bottom: 1px solid black;
 `;
 
-export const Container_img = styled.div`
+export const Img = styled.div`
   display: flex;
 `;
 export const Container = styled.div`
   display: flex;
 `;
-export const Container_value = styled.div`
+export const Value = styled.div`
   margin-left: 20px;
 `;
 
-export const Container_additional = styled.div`
+export const Additional = styled.div`
   margin-bottom: 10px;
   border-bottom: 1px solid black;
 `;

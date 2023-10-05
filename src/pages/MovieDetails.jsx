@@ -3,11 +3,11 @@ import { useParams, Outlet, Link, useLocation } from 'react-router-dom';
 import { fetchInfoAboutMovie } from '../service/api';
 import {
   Links,
-  Container_img,
+  Img,
   Section,
-  Container_value,
+  Value,
   Text,
-  Container_additional,
+  Additional,
   Button,
   Container,
 } from './MovieDetails.styled';
@@ -55,7 +55,7 @@ const MovieDetails = () => {
             <Button>
               <Links to={backLinkLocationRed.current}>Go back</Links>
             </Button>
-            <Container_img>
+            <Img>
               <div>
                 <img
                   src={`https://image.tmdb.org/t/p/w500${poster_path}`}
@@ -64,7 +64,7 @@ const MovieDetails = () => {
                   height={400}
                 />
               </div>
-              <Container_value>
+              <Value>
                 <p>
                   {title} {`(${release_date.split('-')[0]})`}
                 </p>
@@ -77,11 +77,11 @@ const MovieDetails = () => {
                     <Text key={id}>{name}</Text>
                   ))}
                 </Container>
-              </Container_value>
-            </Container_img>
+              </Value>
+            </Img>
           </Section>
           <div>
-            <Container_additional>
+            <Additional>
               <p>Additional information</p>
               <ul>
                 <li>
@@ -91,7 +91,7 @@ const MovieDetails = () => {
                   <Link to={`/movies/${id}/reviews`}>Reviews</Link>
                 </li>
               </ul>
-            </Container_additional>
+            </Additional>
 
             <Suspense fallback={<div>Loading...</div>}>
               <Outlet />
