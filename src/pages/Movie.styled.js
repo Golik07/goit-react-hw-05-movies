@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-const Form = styled.form`
+export const Form = styled.form`
 align-items: center;
     background-color: #fff;
     border-radius: 3px;
