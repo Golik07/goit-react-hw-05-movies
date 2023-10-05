@@ -6,10 +6,10 @@ const Layout = () => {
   return (
     <div>
       <Header>
-        <Nav>
+        <nav>
           <Link to="/">Home</Link>
           <Link to="/movies">Movies</Link>
-        </Nav>
+        </nav>
       </Header>
       <main>
         <Suspense fallback={<div>Loading...</div>}>

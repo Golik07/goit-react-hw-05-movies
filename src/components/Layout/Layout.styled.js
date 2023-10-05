@@ -1,8 +1,6 @@
 import styled from '@emotion/styled';
 import { NavLink } from 'react-router-dom';
 
-export const Nav = styled.nav``;
-
 export const Header = styled.header`
   display: flex;
   align-items: center;
