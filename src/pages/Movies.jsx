@@ -30,7 +30,6 @@ const Movies = () => {
     e.preventDefault();
     const form = e.target;
     setQuery(movie);
-    updateQueryString(movie);
     form.reset();
   };
 

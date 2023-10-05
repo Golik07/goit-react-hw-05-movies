@@ -8,6 +8,7 @@ import {
   Container_2,
   Text,
   Container_3,
+  Button,
 } from './MovieDetails.styled';
 
 const MovieDetails = () => {
@@ -50,11 +51,9 @@ const MovieDetails = () => {
       {value ? (
         <>
           <Section>
-            <br />
-            <div>
+            <Button>
               <Links to={backLinkLocationRed.current}>Go back</Links>
-            </div>
-            <br />
+            </Button>
             <Container>
               <div>
                 <img
