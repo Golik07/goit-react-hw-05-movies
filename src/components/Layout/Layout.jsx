@@ -1,4 +1,3 @@
-import { NavLink, Outlet } from 'react-router-dom';
 import { Suspense } from 'react';
 import { Header, Link } from './Layout.styled';
 
