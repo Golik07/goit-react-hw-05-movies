@@ -20,7 +20,6 @@ const Movies = () => {
         }
         const results = await fetchSearchMovie(query);
         setMovies(results);
-        updateQueryString(movie);
       } catch (error) {}
     };
     fetchPopularMovies();
