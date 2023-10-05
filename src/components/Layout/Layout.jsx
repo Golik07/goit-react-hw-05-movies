@@ -1,6 +1,6 @@
 import { NavLink, Outlet } from 'react-router-dom';
 import { Suspense } from 'react';
-import { Nav, Link, Header } from './Layout.styled';
+import { Header } from './Layout.styled';
 
 const Layout = () => {
   return (
